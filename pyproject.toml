@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nara_qt"
+version = "0.0.1"
+readme = "README.md"
+description = "A plugin package for Qt applications"
+authors = ["A O <adhambek.otabekov.post@gmail.com>"]
+
+packages = [
+    { include = "nara_qt", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyQt6="==6.8.0"
+nara={git="https://github.com/aotabekov91/nara"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
